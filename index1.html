@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Amount</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="atm-container">
+        <h1>Enter Amount</h1>
+        <p id="displayBalance" style="text-align: center; color: green; font-weight: bold;"></p>
+        <form id="amountForm">
+            <label class="amount">Select Amount to Withdraw:
+                <input type="number" placeholder="Enter Amount">
+           
+            <select id="amount" required>
+                
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+                <option value="2000">2000</option>
+                <option value="5000">5000</option>
+                <option value="10000">10000</option>
+                <option value="20000">20000</option>
+            </label>
+            </select>
+     
+            <button type="submit">Withdraw</button>
+        </form>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
