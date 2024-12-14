@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATM Machine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="atm-container">
+    <div class="atm-screen">
+      <h2>ATM Machine</h2>
+      <div class="screen" id="screen">Please insert your card</div>
+    </div>
+
+    <div class="atm-card">
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" placeholder="Enter Card Number">
+      <button onclick="insertCard()">Insert Card</button>
+    </div>
+
+    <div class="atm-functions" id="atm-functions" style="display: none;">
+      <h3>ATM Functions</h3>
+      <div id="balance-info">
+        <button onclick="checkBalance()">Check Balance</button>
+      </div>
+
+      <div id="withdraw-section">
+        <label for="amount">Enter Amount to Withdraw:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+        <button onclick="withdrawMoney()">Withdraw</button>
+      </div>
+
+      <div id="remaining-balance">
+        <p>Your remaining balance: <span id="remaining-balance-value">$0</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
